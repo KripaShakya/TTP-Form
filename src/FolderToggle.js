@@ -31,6 +31,13 @@ class FolderToggle extends Component {
   };
 
   render() {
+    const isShowingFiles = this.state.isShowingFiles;
+    let button;
+    if (isShowingFiles) {
+      button = <button onClick={this.handleHideFiles}>Toggle</button>;
+    } else {
+      button = <button onClick={this.handleShowFiles}>Toggle</button>;
+    }
     return (
       <div>
         <p>{this.state.value}</p>
@@ -41,8 +48,7 @@ class FolderToggle extends Component {
             <li>File3</li>
           </ul>
         ) : null}
-        <button onClick={() => this.handleHideFiles()}>Hide Files</button>
-        <button onClick={() => this.handleShowFiles()}>Show Files</button>
+        {button}
       </div>
     );
   }
