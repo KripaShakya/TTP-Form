@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import FormEdit from "./FormEdit";
+import FolderToggle from "./FolderToggle";
 import "./App.css";
 
 class App extends Component {
@@ -7,6 +8,10 @@ class App extends Component {
     return (
       <>
         <FormEdit />
+        <br />
+        <br />
+        <br />
+        <FolderToggle name="Home" />
       </>
     );
   }
