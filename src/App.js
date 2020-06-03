@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Form from "./Form";
+import FolderToggle from "./FolderToggle";
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <>
-        <Form />
+        <FolderToggle name="Home" />
       </>
     );
   }
