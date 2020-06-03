@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import FormEdit from "./FormEdit";
-import FolderToggle from "./FolderToggle";
+import FormEdit from "./Components/FormEdit";
+import FolderToggle from "./Components/FolderToggle";
 import "./App.css";
 
 class App extends Component {
